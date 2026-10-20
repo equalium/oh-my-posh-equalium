@@ -1,0 +1,59 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#26C6DA",
+          "properties": {
+            "macos": "mac"
+          },
+          "style": "plain",
+          "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}} PS ",
+          "type": "os"
+        },
+        {
+          "foreground": "cyan",
+          "properties": {
+            "style": "folder"
+          },
+          "style": "plain",
+          "template": "<#ffffff>in</> 📁 {{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "foreground": "#ffd86b",
+          "style": "plain",
+          "template": " \ue235 {{ if .Venv }}({{ .Venv }}) {{ end }}",
+          "type": "python"
+        },
+        {
+          "foreground": "#ff94df",
+          "properties": {
+            "branch_icon": " <#ff94df><b>\ue0a0 </b></>"
+          },
+          "style": "plain",
+          "template": "<#ffffff>on</> {{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
+          "type": "git"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "lightGreen",
+          "style": "plain",
+          "template": "\u276f",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 3
+}
