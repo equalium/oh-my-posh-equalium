@@ -2,6 +2,14 @@
 
 A personal Oh My Posh theme for PowerShell, with operating system, current folder, Python environment, and Git information on the first line, followed by a minimal prompt on a second line.
 
+This is a customized version of the original [Spaceship theme](https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/spaceship.omp.json) from [Oh My Posh](https://ohmyposh.dev/).
+
+## Preview
+
+![PowerShell console using Spaceship EQ, with an operating system indicator, current folder, and a second-line prompt](console.png)
+
+Example appearance after installation. Python and Git segments appear when their respective context is available.
+
 ## Install on Windows
 
 ### 1. Install the prerequisites
@@ -88,4 +96,8 @@ Adjust the path to match your installation. Commit or otherwise preserve local t
 - [PowerShell prompt setup](https://ohmyposh.dev/docs/installation/prompt)
 - [Fonts](https://ohmyposh.dev/docs/installation/fonts)
 
-The original customization was based on an existing theme. Before public distribution, check its upstream attribution and license requirements; this repository does not yet declare a license.
+## Attribution
+
+Based on the original [Spaceship theme](https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/spaceship.omp.json) from [Oh My Posh by Jan De Dobbeleer and contributors](https://github.com/JanDeDobbeleer/oh-my-posh). This repository contains a personal modification, not the original theme.
+
+See the [upstream license](https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/LICENSE) for the original project's terms. This repository does not yet declare a separate license.
